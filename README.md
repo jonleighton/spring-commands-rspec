@@ -8,7 +8,7 @@ This gem implements the `rspec` command for
 Add to the `development` group in your Gemfile:
 
 ``` ruby
-gem "spring-commands-rspec"
+gem "spring-commands-rspec", require: false
 ```
 
 Add to your `config/spring.rb`:
