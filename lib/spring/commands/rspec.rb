@@ -10,6 +10,6 @@ module Spring
       end
     end
 
-    Spring.register_command "rspec", RSpec.new
+    Spring.register_command "rspec", RSpec.new if Spring.respond_to? :register_command
   end
 end
