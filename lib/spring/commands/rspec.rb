@@ -11,5 +11,6 @@ module Spring
     end
 
     Spring.register_command "rspec", RSpec.new
+    Spring::Commands::Rake.environment_matchers[/^spec($|:)/] = "test"
   end
 end
