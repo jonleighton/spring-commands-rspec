@@ -5,14 +5,8 @@ This gem implements the `rspec` command for
 
 ## Usage
 
-Add to the `development` group in your Gemfile:
+Add to your Gemfile:
 
 ``` ruby
-gem "spring-commands-rspec", require: false
-```
-
-Add to your `config/spring.rb`:
-
-``` ruby
-require "spring/commands/rspec"
+gem "spring-commands-rspec"
 ```
