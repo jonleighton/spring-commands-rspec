@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "spring-commands-rspec"
-  spec.version       = "1.0.0"
+  spec.version       = "1.0.1"
   spec.authors       = ["Jon Leighton"]
   spec.email         = ["j@jonathanleighton.com"]
   spec.description   = %q{rspec command for spring}
