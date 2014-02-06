@@ -8,5 +8,5 @@ This gem implements the `rspec` command for
 Add to your Gemfile:
 
 ``` ruby
-gem "spring-commands-rspec"
+gem "spring-commands-rspec", group: :development
 ```
