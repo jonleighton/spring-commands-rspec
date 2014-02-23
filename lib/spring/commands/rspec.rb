@@ -6,7 +6,7 @@ module Spring
       end
 
       def exec_name
-        "rspec"
+        File.executable?("bin/rspec") ? "bin/rspec" : "rspec"
       end
     end
 
