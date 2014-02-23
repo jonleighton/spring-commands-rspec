@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["j@jonathanleighton.com"]
   spec.description   = %q{rspec command for spring}
   spec.summary       = %q{rspec command for spring}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/jonleighton/spring-commands-rspec"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
