@@ -8,6 +8,10 @@ module Spring
       def exec_name
         "rspec"
       end
+
+      def gem_name
+        "rspec-core"
+      end
     end
 
     Spring.register_command "rspec", RSpec.new
