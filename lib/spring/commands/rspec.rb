@@ -12,6 +12,11 @@ module Spring
       def gem_name
         "rspec-core"
       end
+
+      def call
+        ::RSpec.configuration.start_time = Time.now
+        load Gem.bin_path(gem_name, exec_name)
+      end
     end
 
     Spring.register_command "rspec", RSpec.new
