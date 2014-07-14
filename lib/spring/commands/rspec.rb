@@ -12,6 +12,10 @@ module Spring
       def gem_name
         "rspec-core"
       end
+
+      def binstub_prelude
+        "RSpec.configuration.start_time = Time.now"
+      end
     end
 
     Spring.register_command "rspec", RSpec.new
