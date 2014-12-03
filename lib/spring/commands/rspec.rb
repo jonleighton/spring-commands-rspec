@@ -15,7 +15,15 @@ module Spring
 
       def call
         ::RSpec.configuration.start_time = Time.now if defined?(::RSpec.configuration)
+
+        # RSpec expects $0 to be 'rspec'. If that's not the case, it won't
+        # handle command line arguments correctly.
+        old_dollar_zero = $0
+        $0 = exec_name
+
         load Gem.bin_path(gem_name, exec_name)
+
+        $0 = old_dollar_zero
       end
     end
 
@@ -23,3 +31,4 @@ module Spring
     Spring::Commands::Rake.environment_matchers[/^spec($|:)/] = "test"
   end
 end
+
