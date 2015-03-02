@@ -8,7 +8,7 @@ This gem implements the `rspec` command for
 Add to your Gemfile:
 
 ``` ruby
-gem "spring-commands-rspec", group: :development
+gem 'spring-commands-rspec', group: :development
 ```
 
 If you're using spring binstubs, run `bundle exec spring binstub rspec` to generate `bin/rspec`.
