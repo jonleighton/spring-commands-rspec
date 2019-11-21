@@ -3,6 +3,25 @@
 This gem implements the `rspec` command for
 [Spring](https://github.com/jonleighton/spring).
 
+## Install
+
+Add this code to your rails app `RAILS_APP/config/spring.rb`
+
+Or in your home directory `~/.spring.rb`
+
+See this for information https://github.com/rails/spring#configuration
+
+```ruby
+require 'spring-commands-rspec'
+
+%w[
+  .ruby-version
+  .rbenv-vars
+  tmp/restart.txt
+  tmp/caching-dev.txt
+].each { |path| Spring.watch(path) }
+```
+
 ## Usage
 
 Add to your Gemfile:
